@@ -13,7 +13,9 @@ a {
   display: flex;
   flex-direction: column;
 
-  paddi
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: ;
   background-color: bisque;
   border: 1px black solid;
   border-radius: 5px;
