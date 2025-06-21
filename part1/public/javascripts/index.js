@@ -1,4 +1,7 @@
 
 const app = new Vue({
-    el:
+    el:"#app",
+    data: {
+        
+    }
 })
