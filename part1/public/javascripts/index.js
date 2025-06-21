@@ -23,7 +23,9 @@ const app = new Vue({
         });
     },
     methods: {
-        
+        function sendMessage() {
+
+        };
     }
 
 });
