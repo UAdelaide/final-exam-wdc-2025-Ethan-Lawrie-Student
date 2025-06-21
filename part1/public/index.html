@@ -18,7 +18,7 @@
             <p>{{listing.price}}</p>
             <p>Being sold by: {{listing.full_name}}</p>
             <input type="text" v-model="messageTxt" placeholder="type your message here">
-            <button type="button">Send Message</button>
+            <button type="button" @click="sendMessage(listing)">Send Message</button>
         </div>
 
     </section>
