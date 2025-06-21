@@ -16,7 +16,7 @@ router.get('/getListings', function(req, res) {
 
 
 
-    connection.query('SELECT User.fullname, Book.title, Book.author, ListedBook.sell_price FROM ListedBook INNER JOIN Book ON ListedBook.book_id = Book.book_id INNER JOIN User ON ListedBook.seller_id = User.student_id WHERE ')
+    connection.query('SELECT User.fullname, Book.title, Book.author, ListedBook.sell_price FROM ListedBook INNER JOIN Book ON ListedBook.book_id = Book.book_id INNER JOIN User ON ListedBook.seller_id = User.student_id WHERE ListedBook.listing_status = TRUE')
   })
 });
 
