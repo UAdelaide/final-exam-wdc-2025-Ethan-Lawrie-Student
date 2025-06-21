@@ -11,7 +11,9 @@ const app = new Vue({
     },
     created() {
         console.log("fetching listings");
-        fetch(`/getListings`).then((res) => {
+        fetch(`/getListings`, {
+            method:"GET"
+        }).then((res) => {
             if(!res.ok) {
                 throw new Error(`Fetch didnt work: ${res.status}`);
 
@@ -24,7 +26,9 @@ const app = new Vue({
     },
     methods: {
         sendMessage(listing) {
-            fetch('/')
+            fetch(`/getListings`, {
+                method:"GET"
+            })
         }
     }
 
