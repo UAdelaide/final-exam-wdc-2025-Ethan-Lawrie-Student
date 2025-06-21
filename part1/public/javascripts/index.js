@@ -42,6 +42,7 @@ const app = new Vue({
 
                 }
                 this.messageTxt[listing.listing_id] = "";
+                alert("Message sent!");
                 return;
             });
 
