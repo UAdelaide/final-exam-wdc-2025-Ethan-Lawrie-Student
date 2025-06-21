@@ -29,7 +29,7 @@ router.get('/getListings', function(req, res) {
 
 
 
-router.post('/sendMessage', function(req, res) {
+router.post('/postMessage', function(req, res) {
 
   const {buyer_id, seller_id, message} = req.body;
 
