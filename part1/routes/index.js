@@ -17,7 +17,10 @@ router.get('/getListings', function(req, res) {
 
 
     connection.query('SELECT User.full_name, Book.title, Book.author, ListedBook.sell_price FROM ListedBook INNER JOIN Book ON ListedBook.book_id = Book.book_id INNER JOIN User ON ListedBook.seller_id = User.student_id WHERE ListedBook.listing_status = TRUE', function(errror2, rows) {
-      if(errror2)
+      if(error) {
+          res.status(500).se;
+        return;
+      }
     });
   })
 });
