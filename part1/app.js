@@ -173,9 +173,8 @@ const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 
 app.use('/api/dog', walkRoutes);
-app.use('/api/users', userRoutes);
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 
 module.exports = app;
