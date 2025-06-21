@@ -10,8 +10,13 @@ router.get('/', function(req, res, next) {
 router.get('/getListings', function(req, res) {
   req.pool.getConnection(function(error, connection) {
     if(error) {
-      res.send
+      res.sendStatus(500);
+      return;
     }
+
+
+
+    connection.query('')
   })
 });
 
