@@ -26,8 +26,9 @@ const app = new Vue({
     },
     methods: {
         sendMessage(listing) {
-            fetch(`/getListings`, {
-                method:"GET"
+            fetch(`/postMessage`, {
+                method:"POST",
+                
             })
         }
     }
