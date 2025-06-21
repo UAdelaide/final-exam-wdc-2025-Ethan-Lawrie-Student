@@ -2,7 +2,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const app = express();
+
+var app = express();
 
 const mysql = require('mysql');
 
@@ -34,7 +35,6 @@ var usersRouter = require('./routes/users');
 
 
 
-var app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
