@@ -116,12 +116,12 @@ let db;
         );
 
         INSERT INTO Users (username, email, password_hash, role) VALUES (
-            "jerry", "jerry@example.com", "hashedJerry", 'walker'
+            'jerry', 'jerry@example.com', "hashedJerry", 'walker'
         );
 
 
 
-        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Max', 'medium' FROM Users WHERE username = "alice123");
+        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , 'Max', 'medium' FROM Users WHERE username = "alice123");
 
 
 
