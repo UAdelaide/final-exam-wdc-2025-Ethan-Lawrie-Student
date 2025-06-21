@@ -28,3 +28,10 @@ INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Bella", 'small' FROM 
 
 
 INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "EthanJnr", 'small' FROM Users WHERE username = "ethanL");
+
+
+
+INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Ruff", 'small' FROM Users WHERE username = "ethanL");
+
+
+INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Ruff", 'small' FROM Users WHERE username = "ethanL");
