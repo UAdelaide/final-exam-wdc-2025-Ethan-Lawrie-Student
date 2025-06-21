@@ -14,5 +14,5 @@ INSERT INTO Users (username, email, password_hash, role) VALUES (
 );
 
 INSERT INTO Users (username, email, password_hash, role) VALUES (
-    "bob", "bob@example.com", "hashedBob", 'walker'
+    "jerry", "jerry@example.com", "hashedJerry", 'walker'
 );
