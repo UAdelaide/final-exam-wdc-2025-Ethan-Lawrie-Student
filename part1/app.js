@@ -99,7 +99,7 @@ let db;
 
     // Insert data if table is empty
     // const [rows] = await db.execute('SELECT COUNT(*) AS count FROM books');
-    await db.execute(`
+    await db.query(`
         INSERT INTO Users (username, email, password_hash, role) VALUES (
             'alice123', 'alice@example.com', 'hashed123', 'owner'
         );
