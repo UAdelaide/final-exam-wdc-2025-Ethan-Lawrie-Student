@@ -1,1 +1,3 @@
-INSERT INTO Users (username, )
+INSERT INTO Users (username, email, password_hash, role) VALUES (
+    
+)
