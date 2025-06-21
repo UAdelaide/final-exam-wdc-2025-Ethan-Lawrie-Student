@@ -16,7 +16,7 @@ router.get('/getListings', function(req, res) {
 
 
 
-    connection.query('SELECT ')
+    connection.query('SELECT User.fullname, User.location')
   })
 });
 
