@@ -31,7 +31,7 @@ router.get('/getListings', function(req, res) {
 
 router.post('/sendMessage', function(req, res) {
 
-  const {buyer_id, seller_id, message} = ;
+  const {buyer_id, seller_id, message} = req.body;
 
   req.pool.getConnection(function(error, connection) {
     if(error) {
@@ -39,7 +39,7 @@ router.post('/sendMessage', function(req, res) {
       return;
     }
 
-    connection.query('INSERT INTO Message (potential_buyer_id, potential_seller_id, message), (?,?,?)', [buyer_id,seller_id, message], function(errror2, rows) {
+    connection.query('INSERT INTO Message (potential_buyer_id, potential_seller_id, message), (?,?,?)', [buyer_id,seller_id, message.trim()], function(errror2, rows) {
       if(error) {
           res.status(500).send("Error querying");
         return;
