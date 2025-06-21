@@ -33,7 +33,7 @@ router.get('/walkrequests/open', async function(req, res) {
 router.get('/walkers/summary', async function(req, res) {
   try {
     req.db.execute(`
-      SELECT Users.username AS 'walker_username', COUNT(*) AS 'total_ratings', AVG(WalkRatings.rating) AS average_rating, COUNT(WalkRequests.status = ')
+      SELECT Users.username AS 'walker_username', COUNT(*) AS 'total_ratings', AVG(WalkRatings.rating) AS average_rating, COUNT(WalkRequests.status = 'completed') FROM Walk
     `).then((result) => {
       res.json(result);
     })
