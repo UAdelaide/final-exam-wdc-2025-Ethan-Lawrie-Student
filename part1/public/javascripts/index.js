@@ -5,7 +5,9 @@
 const app = new Vue({
     el:"#app",
     data: {
-        openListings: []
+        openListings: [],
+        messageTxt:""
+
     },
     created() {
         console.log("fetching listings");
@@ -19,7 +21,11 @@ const app = new Vue({
             console.log("WORKS");
             this.openListings = jsonRes;
         });
+    },
+    methods: {
+        
     }
+
 });
 
 
