@@ -37,7 +37,7 @@ router.post('/sendMessage', function(req, res) {
       return;
     }
 
-    connection.query('SELECT User.full_name, User.student_id, Book.title, Book.author, ListedBook.listing_id, ListedBook.sell_price FROM ListedBook INNER JOIN Book ON ListedBook.book_id = Book.book_id INNER JOIN User ON ListedBook.seller_id = User.student_id WHERE ListedBook.listing_status = TRUE', function(errror2, rows) {
+    connection.query('INSERT INTO Message (', function(errror2, rows) {
       if(error) {
           res.status(500).send("Error querying");
         return;
