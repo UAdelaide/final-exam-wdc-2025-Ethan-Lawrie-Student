@@ -27,4 +27,4 @@ INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Bella", 'small' FROM 
 
 
 
-INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "BobJnr", 'small' FROM Users WHERE username = "carol123");
+INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "EthanJnr", 'small' FROM Users WHERE username = "ethanL");
