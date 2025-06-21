@@ -28,6 +28,9 @@ const app = new Vue({
         sendMessage(listing) {
             fetch(`/postMessage`, {
                 method:"POST",
+                headers: {
+                    'Content-Type':'application/json'
+                },
                 
             })
         }
