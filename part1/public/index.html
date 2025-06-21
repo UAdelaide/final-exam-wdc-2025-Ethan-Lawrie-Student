@@ -13,6 +13,7 @@
 
     <section id="app">
         <h2>Available Textbooks</h2>
+        
         <div class="textbookEntry" v-for="listing in openListings">
             <h3>{{listing.title}} - ${{listing.sell_price}}</h3>
             <p>Being sold by: {{listing.full_name}}</p>
