@@ -13,6 +13,7 @@ const app = new Vue({
                 throw new Error(`Fetch didnt work: ${res.status}`);
 
             }
+            return res.json();
         });
     }
 });
