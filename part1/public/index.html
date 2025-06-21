@@ -7,11 +7,11 @@
     <script src="./javascripts/index.js" defer></script>
 </head>
 
-<body id="app">
+<body >
     <h1>Text Book Marketplace</h1>
     <p>Welcome to the place to sell and buy textbooks!</p>
 
-    <section>
+    <section id="app">
         <h2>Available Textbooks</h2>
         <div class="textbookEntry" v-for="listing in openListings">
             <h3>{{listing.title}}</h3>
