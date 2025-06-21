@@ -8,6 +8,7 @@ const app = new Vue({
         openListings: []
     },
     created() {
+        console.log("")
         fetch(`getListings`).then((res) => {
             if(!res.ok) {
                 throw new Error(`Fetch didnt work: ${res.status}`);
@@ -15,6 +16,7 @@ const app = new Vue({
             }
             return res.json();
         }).then((jsonRes) => {
+            console.log("WORKS");
             this.openListings = jsonRes;
         });
     }
