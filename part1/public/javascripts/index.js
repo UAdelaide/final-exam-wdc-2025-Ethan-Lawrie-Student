@@ -14,6 +14,8 @@ const app = new Vue({
 
             }
             return res.json();
+        }).then((jsonRes) => {
+            this.openListings = jsonRes;
         });
     }
 });
