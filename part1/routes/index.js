@@ -16,7 +16,7 @@ router.get('/getListings', function(req, res) {
 
 
 
-    connection.query('SELECT User.fullname, Book.title, Book.author, ListedBook.sell_price FROM ListedBook INNER JOIN ')
+    connection.query('SELECT User.fullname, Book.title, Book.author, ListedBook.sell_price FROM ListedBook INNER JOIN Book ON ListedBook.book_id')
   })
 });
 
