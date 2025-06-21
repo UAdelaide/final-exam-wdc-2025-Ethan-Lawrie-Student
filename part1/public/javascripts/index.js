@@ -23,9 +23,9 @@ const app = new Vue({
         });
     },
     methods: {
-        function sendMessage() {
-
-        };
+        sendMessage(listing) {
+            fetch('/')
+        }
     }
 
 });
