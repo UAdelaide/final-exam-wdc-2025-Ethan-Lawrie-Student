@@ -8,7 +8,9 @@ const app = new Vue({
         openListings: []
     },
     created() {
-        fetch(`getListings`).then((res))
+        fetch(`getListings`).then((res) => {
+            
+        });
     }
 });
 
