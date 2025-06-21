@@ -41,7 +41,7 @@ const app = new Vue({
                     throw new Error(`Fetch didnt work: ${res.status}`);
 
                 }
-                this.message[listing.listing_id]
+                this.message[listing.listing_id] = "";
                 return;
             });
 
