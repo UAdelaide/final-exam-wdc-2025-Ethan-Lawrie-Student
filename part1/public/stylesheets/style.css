@@ -12,5 +12,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  background-color: ;
+  background-color: bisque;
+  border: 1px black solid;
+
 }
