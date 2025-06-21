@@ -33,7 +33,7 @@ router.get('/walkrequests/open', async function(req, res) {
 router.get('/walkers/summary', async function(req, res) {
   try {
     req.db.execute(`
-      SELECT Users.username AS 'walker_username', COUNT(*) AS 'total_ratings', AVG(WalkRatings.rating) AS average_rating, COUNT(WalkRequests.status = 'completed') FROM WalkRequests INNER JOIN WalkRatings ON WalkRequests.request_id = WalkRatings.request_id INNER JOIN Dogs ON WalkRequests.dog_id = Dogs.dog_id INNER JOIN Users ON Dogs.
+      SELECT Users.username AS 'walker_username', COUNT(*) AS 'total_ratings', AVG(WalkRatings.rating) AS average_rating, COUNT(WalkRequests.status = 'completed') FROM WalkRequests INNER JOIN WalkRatings ON WalkRequests.request_id = WalkRatings.request_id INNER JOIN Dogs ON WalkRequests.dog_id = Dogs.dog_id INNER JOIN Users ON Dogs.owner_id = Users.user_id WHERE User
     `).then((result) => {
       res.json(result);
     })
