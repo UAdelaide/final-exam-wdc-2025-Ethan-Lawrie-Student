@@ -32,7 +32,7 @@ const app = new Vue({
                     'Content-Type':'application/json'
                 },
                 body: JSON.stringify({
-                    curUser:
+                    buyerID: "a1923045"
                 })
             })
         }
