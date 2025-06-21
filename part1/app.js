@@ -169,10 +169,9 @@ let db;
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-const walkRoutes = require('./routes/apis');
-const userRoutes = require('./routes/userRoutes');
+const apiRoutes = require('./routes/apis');
 
-app.use('/api/dog', walkRoutes);
+app.use('/api', apiRoutes);
 
 app.use('/', indexRouter);
 // app.use('/users', usersRouter);
