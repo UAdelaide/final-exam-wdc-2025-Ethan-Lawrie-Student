@@ -8,7 +8,7 @@ const app = new Vue({
         openListings: []
     },
     created() {
-        fetch(`getListings?curUser="a1923045`)
+        fetch(`getListings?curUser=`)
     }
 });
 
