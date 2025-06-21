@@ -10,7 +10,8 @@ const app = new Vue({
     created() {
         fetch(`getListings`).then((res) => {
             if(!res.ok) {
-                throw new Error("Fetch didnt work", resp)
+                throw new Error(`Fetch didnt work: ${res.status}`);
+
             }
         });
     }
