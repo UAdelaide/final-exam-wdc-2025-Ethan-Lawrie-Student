@@ -10,11 +10,11 @@ const pool = mysql.createPool({
     host: 'localhost',
     // user: '',
     // password: '',
-    database: 'sakila',
+    database: 'TextbookSelling',
     // waitForConnections: true,
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
+    // waitForConnections: true,
+    // connectionLimit: 10,
+    // queueLimit: 0
 });
 
 module.exports = app;
