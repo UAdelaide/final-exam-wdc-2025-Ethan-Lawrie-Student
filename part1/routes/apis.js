@@ -4,7 +4,7 @@ var router = express.Router();
 router.get('/dogs', async function(req, res) {
   try {
     await db.execute(`
-      SELECT Dog.name, Dog.size, User.username FROM 
+      SELECT Dogs.name, Dogs.size, User.username FROM Dogs
     `);
   } catch (err) {
     console.error('Error querying', err);
