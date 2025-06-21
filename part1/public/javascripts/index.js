@@ -32,8 +32,8 @@ const app = new Vue({
                     'Content-Type':'application/json'
                 },
                 body: JSON.stringify({
-                    buyerID: "a1923045",
-                    sellerID: listing.student_id,
+                    buyer_id: "a1923045",
+                    seller_id: listing.student_id,
                     message:this.messageTxt[listing.id]
                 })
             })
