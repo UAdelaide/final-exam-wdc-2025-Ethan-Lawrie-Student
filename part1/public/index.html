@@ -14,8 +14,8 @@
     <section id="app">
         <h2>Available Textbooks</h2>
         <div class="textbookEntry" v-for="listing in openListings">
-            <h3>{{listing.title}}</h3>
-            <p>{{listing.sell_price}}</p>
+            <h3>{{listing.title}} - ${{listing.sell_price}}</h3>
+            <p></p>
             <p>Being sold by: {{listing.full_name}}</p>
             <input type="text" v-model="messageTxt" placeholder="type your message here">
             <button type="button" @click="sendMessage(listing)">Send Message</button>
