@@ -33,7 +33,7 @@ router.get('/walkrequests/open', async function(req, res) {
 router.get('/walkers/summary', async function(req, res) {
   try {
     req.db.execute(`
-      SELECT 
+      SELECT Users.username
     `).then((result) => {
       res.json(result);
     })
