@@ -53,4 +53,4 @@ INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, st
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) (SELECT dog_id, '2025-02-10 07:20:00', 20, 'Adelaide Uni', 'completed' FROM Dogs WHERE name = 'EthanJnr');
 
 
-INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) (SELECT dog_id, '2025-06-10 07:20:00', 20, 'Adelaide Uni', 'open' FROM Dogs WHERE name = 'Fred');
+INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) (SELECT dog_id, '2025-06-11 08:35:01', 20, 'Adelaide Uni', 'open' FROM Dogs WHERE name = 'Fred');
