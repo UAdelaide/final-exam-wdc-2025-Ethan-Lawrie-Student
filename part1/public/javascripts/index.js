@@ -34,14 +34,14 @@ const app = new Vue({
                 body: JSON.stringify({
                     buyer_id: "a1923045",
                     seller_id: listing.student_id,
-                    message:this.messageTxt[listing.id]
+                    message:this.messageTxt[listing.listing_id]
                 })
             }).then((res) => {
                 if(!res.ok) {
                     throw new Error(`Fetch didnt work: ${res.status}`);
 
                 }
-                
+                this.message[listing.listing_id]
                 return;
             });
 
