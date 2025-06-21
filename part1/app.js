@@ -121,22 +121,22 @@ let db;
 
 
 
-        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Max", 'medium' FROM Users WHERE username = "alice123");
+        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Max', 'medium' FROM Users WHERE username = "alice123");
 
 
 
-        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Bella", 'small' FROM Users WHERE username = "carol123");
+        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , 'Bella', 'small' FROM Users WHERE username = "carol123");
 
 
 
-        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "EthanJnr", 'small' FROM Users WHERE username = "ethanL");
+        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , 'EthanJnr', 'small' FROM Users WHERE username = "ethanL");
 
 
 
-        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Ruff", 'small' FROM Users WHERE username = "ethanL");
+        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , 'Ruff', 'small' FROM Users WHERE username = "ethanL");
 
 
-        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , ""Bluey"", 'medium' FROM Users WHERE username = "ethanL");
+        INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , 'Bluey', 'medium' FROM Users WHERE username = "ethanL");
 
 
         INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , 'Fred', 'large' FROM Users WHERE username = "alice123");
