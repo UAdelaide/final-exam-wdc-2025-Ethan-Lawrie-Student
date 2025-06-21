@@ -44,7 +44,7 @@ router.post('/sendMessage', function(req, res) {
           res.status(500).send("Error querying");
         return;
       }
-      res.json(rows);
+      res.sendStatus);
     });
   })
 });
