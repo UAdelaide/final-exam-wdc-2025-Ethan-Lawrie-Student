@@ -9,7 +9,9 @@ const app = new Vue({
     },
     created() {
         fetch(`getListings`).then((res) => {
-            console.log()
+            if(!res.ok) {
+                
+            }
         });
     }
 });
