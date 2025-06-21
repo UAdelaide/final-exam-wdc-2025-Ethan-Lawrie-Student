@@ -31,7 +31,10 @@ INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "EthanJnr", 'small' FR
 
 
 
-INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Ruff", 'large' FROM Users WHERE username = "ethanL");
+INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Ruff", 'small' FROM Users WHERE username = "ethanL");
+
+
+INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Bluey", 'medium' FROM Users WHERE username = "ethanL");
 
 
 INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Bluey", 'medium' FROM Users WHERE username = "ethanL");
