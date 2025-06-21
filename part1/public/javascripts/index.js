@@ -36,7 +36,13 @@ const app = new Vue({
                     seller_id: listing.student_id,
                     message:this.messageTxt[listing.id]
                 })
-            })
+            })..then((res) => {
+            if(!res.ok) {
+                throw new Error(`Fetch didnt work: ${res.status}`);
+
+            }
+            return res.json();
+        })
         }
     }
 
