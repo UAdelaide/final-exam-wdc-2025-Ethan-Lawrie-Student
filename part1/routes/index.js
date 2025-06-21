@@ -31,7 +31,7 @@ router.get('/getListings', function(req, res) {
 
 router.post('/sendMessage', function(req, res) {
 
-  [buyer_id, seller_id, message] = ;
+  const {buyer_id, seller_id, message} = ;
 
   req.pool.getConnection(function(error, connection) {
     if(error) {
