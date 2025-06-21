@@ -8,7 +8,7 @@ const app = new Vue({
         openListings: []
     },
     created() {
-        fetch('')
+        fetch("")
     }
 });
 
