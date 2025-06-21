@@ -164,7 +164,10 @@ let db;
 })();
 
 
-
+app.use(function(req, res, next) {
+    req.db = db;
+    next();
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
