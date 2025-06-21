@@ -1,2 +1,1 @@
-INSERT INTO Users
-    
+INSERT INTO Users (username, )
