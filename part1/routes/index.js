@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/getListings', function(req, res) {
-  req.pool.getConnection()
+  req.pool.getConnection(function(error, connect))
 });
 
 
