@@ -8,7 +8,7 @@ const app = new Vue({
         openListings: []
     },
     created() {
-        console.log("")
+        console.log("fetching listings");
         fetch(`getListings`).then((res) => {
             if(!res.ok) {
                 throw new Error(`Fetch didnt work: ${res.status}`);
