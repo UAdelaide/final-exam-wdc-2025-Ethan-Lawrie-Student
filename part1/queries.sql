@@ -41,4 +41,4 @@ INSERT INTO Dogs (owner_id, name, size) (SELECT user_id , "Fred", 'large' FROM U
 
 
 
-INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) VALUES ()
+INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) VALUES (SELECT dog_id, '')
