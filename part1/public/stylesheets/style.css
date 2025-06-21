@@ -9,9 +9,11 @@ a {
 
 
 .textbookEntry {
+
   display: flex;
   flex-direction: column;
 
+  paddi
   background-color: bisque;
   border: 1px black solid;
   border-radius: 5px;
