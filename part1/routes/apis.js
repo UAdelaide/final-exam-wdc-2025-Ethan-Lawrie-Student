@@ -20,7 +20,7 @@ router.get('/dogs', async function(req, res) {
 router.get('/walkrequests/open', async function(req, res) {
   try {
     req.db.execute(`
-      SELECT Dogs.name AS 'dog_name', Dogs.size, Users.username AS  FROM Dogs INNER JOIN Users ON Dogs.owner_id = Users.user_id
+      SELECT WalkRequests.request_id, Dogs.name AS 'dog_name', requested_time Dogs.size, Users.username AS  FROM Dogs INNER JOIN Users ON Dogs.owner_id = Users.user_id
     `).then((result) => {
       res.json(result);
     })
