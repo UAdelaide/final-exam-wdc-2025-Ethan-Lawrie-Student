@@ -18,7 +18,7 @@
             <h3>{{listing.title}} - ${{listing.sell_price}}</h3>
             <p>Being sold by: {{listing.full_name}}</p>
             <input type="text" v-model="messageTxt" placeholder="type your message here">
-            <button type="button" @click="sendMessage(listing)">Send Message</button>
+            <button type="button" :aria-label="'Send message to ' + listing.full_name" @click="sendMessage(listing)">Send Message</button>
         </div>
 
     </section>
