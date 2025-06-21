@@ -37,7 +37,7 @@ router.post('/sendMessage', function(req, res) {
       return;
     }
 
-    connection.query('INSERT INTO Message (', function(errror2, rows) {
+    connection.query('INSERT INTO Message (potential_buyer_id, potential_seller_id, message), (?,?,?)', function(errror2, rows) {
       if(error) {
           res.status(500).send("Error querying");
         return;
