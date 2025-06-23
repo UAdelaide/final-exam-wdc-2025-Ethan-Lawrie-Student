@@ -25,7 +25,7 @@ router.get('/getAllDogs', async (req, res) => {
 
 router.get('/fetchDogInfo', async (req, res) => {
   try {
-    const [rows] = await db.query('SELECT Dogs.dog_id, Dogs.name FROM Dogs INNER JOIN Users ON Dogs.owner_id = Users.user_id WHERE Dogs.owner_id = ?', [req.session.user_id]);
+    const [rows] = await db.query('SELECT * FROM Dogs');
     res.json(rows);
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch dogs' });
