@@ -111,7 +111,7 @@
                 const imageData = await fetch('https://dog.ceo/api/breeds/image/random');
                 const img = await imageData.json();
                 // map the same thing with the spread and also added image
-                return {...dog, img}
+                return {...dog, img.message};
               })
             )
 
