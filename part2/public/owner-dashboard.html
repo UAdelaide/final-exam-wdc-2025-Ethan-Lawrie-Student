@@ -87,6 +87,7 @@
         async function logout() {
           try {
             const res = await fetch('/api/users/logout');
+            window.location.href = '/owner-dashboard.html';
           } catch (err) {
             error.value = 'Failed to logout';
           }
