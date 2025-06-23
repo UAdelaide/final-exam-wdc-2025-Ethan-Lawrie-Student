@@ -61,8 +61,8 @@
             try {
               const res = await fetch('/api/users/me');
               if (!res.ok) throw new Error('Failed to get login status');
-              console.log("RES: ", res);
-              return res;
+
+              return res.json();
             } catch (err) {
               error.value = err.message;
               return null;
