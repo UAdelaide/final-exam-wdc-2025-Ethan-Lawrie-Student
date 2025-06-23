@@ -76,11 +76,12 @@
             console.log("User type ", result.user.role);
 
             // redirect to the right page
-            // if(result.user.role = 'walker') {
-            //   window.location.href = '/owner-dashboard.html';
-            // } else {
-            //   window.location.href = '/walker-dashboard.html';
-            // }
+            if(result.user.role = "walker") {
+              window.location.href = '/walker-dashboard.html';
+              window.location.href = '/owner-dashboard.html';
+            } else {
+
+            }
 
           } catch (err) {
             error.value = err.message;
