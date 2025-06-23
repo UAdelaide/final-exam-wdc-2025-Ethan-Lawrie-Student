@@ -20,7 +20,9 @@ const { createApp, ref } = Vue
         })
       }
       return {
-        message
+        message,
+        dogURL,
+        
       }
     }
   }).mount('#main')
