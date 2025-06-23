@@ -7,9 +7,11 @@ router.post('/', async (req, res) => {
     const {username, password} = req.body;
 
   try {
-    const user = await db.query(`
+    const [rows] = await db.query(`
       SELECT user_id, role FROM Users WHERE
     `);
+    const user = rows[0];
+
   } catch (error) {
     console.error('SQL Error:', error);
     res.status(500).json({ error: 'Failed to fetch walk requests' });
