@@ -77,9 +77,11 @@
 
             // redirect to the right page
             if(result.user.role = "walker") {
-              window.location.href = '/walker-dashboard.html';
+              console.log("WALKER");
+              // window.location.href = '/walker-dashboard.html';
 
             } else if (result.user.role = "owner") {
+              console.log("WALKER");
               window.location.href = '/owner-dashboard.html';
 
             }
