@@ -4,7 +4,7 @@ const { createApp, ref } = Vue
     setup() {
       const message = ref('Hello vue!')
       let dogURL = "";
-      let display
+      let displayImage = false;
 
 
       function getDog(){
@@ -20,9 +20,16 @@ const { createApp, ref } = Vue
             }
         })
       }
+
+      function 
+
+
       return {
         message,
         dogURL,
+        displayImage,
+        getDog,
+
 
       }
     }
