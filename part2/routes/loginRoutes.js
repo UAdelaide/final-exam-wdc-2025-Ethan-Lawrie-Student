@@ -10,11 +10,12 @@ router.post('/', async (req, res) => {
     const [rows] = await db.query(`
       SELECT user_id, role FROM Users WHERE username = ? AND password_hash = ?
     `, [username, password]);
-    
+
     if(!rows) {
         res.status(404).json({ error: 'No user' });
     }
     const user = rows[0];
+    
 
   } catch (error) {
     console.error('SQL Error:', error);
