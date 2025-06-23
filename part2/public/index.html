@@ -77,6 +77,8 @@
               password: ''
             };
 
+            console.log("User type ", result.user.role);
+
             if(result.user.role = 'walker') {
               window.location.href = '/owner-dashboard.html';
             } else {
