@@ -16,13 +16,13 @@ const { createApp, ref } = Vue
             return data.json();
         }).then((data) => {
             if(data.status === "success") {
-                dogURL = data.message;
+                dogURL.value = data.message;
             }
         })
       }
 
       function showDog() {
-        imageDisplay = "block";
+        imageDisplay.value = "block";
       }
 
 
