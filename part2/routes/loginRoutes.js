@@ -7,8 +7,8 @@ router.post('/', async (req, res) => {
     const {username, password} = req.body;
 
   try {
-    await db.query(`
-      SELECT user_id, role
+    const user = await db.query(`
+      SELECT user_id, role FROM Users WHERE
     `);
   } catch (error) {
     console.error('SQL Error:', error);
