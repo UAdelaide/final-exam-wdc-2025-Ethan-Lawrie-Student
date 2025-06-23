@@ -3,7 +3,7 @@ const { createApp, ref } = Vue
   createApp({
     setup() {
       const message = ref('Hello vue!')
-      let dogURL = "";
+      let dogURL = ref("");
       let imageDisplay = "none";
 
 
