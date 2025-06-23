@@ -11,7 +11,7 @@ router.post('/', async (req, res) => {
       SELECT user_id, role FROM Users WHERE
     `);
     if(!rows) {
-        res.status(500).json({ error: 'Failed to fetch users' });
+        res.status().json({ error: 'No user' });
     }
     const user = rows[0];
 
