@@ -60,7 +60,7 @@
         async function getCurrentUser() {
             try {
               const res = await fetch('/api/users/');
-              if (!res.ok) throw new Error('Failed to load walk requests');
+              if (!res.ok) throw new Error('Failed to get login status');
               walks.value = await res.json();
             } catch (err) {
               error.value = err.message;
