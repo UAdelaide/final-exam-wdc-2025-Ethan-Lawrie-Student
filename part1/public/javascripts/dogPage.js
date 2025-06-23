@@ -4,6 +4,7 @@ const { createApp, ref } = Vue
     setup() {
       const message = ref('Hello vue!')
       let dogURL = "";
+      let display
 
 
       function getDog(){
@@ -22,7 +23,7 @@ const { createApp, ref } = Vue
       return {
         message,
         dogURL,
-        
+
       }
     }
   }).mount('#main')
