@@ -3,7 +3,7 @@ const { createApp, ref } = Vue
   createApp({
     setup() {
       const message = ref('Hello vue!')
-      let 
+      let dogURL = "";
 
 
       function getDog(){
@@ -15,7 +15,7 @@ const { createApp, ref } = Vue
             return data.json();
         }).then((data) => {
             if(data.status === "success") {
-
+                this.dogURL = data.message;
             }
         })
       }
