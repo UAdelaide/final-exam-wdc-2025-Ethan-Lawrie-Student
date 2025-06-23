@@ -18,7 +18,9 @@ router.post('/', async (req, res) => {
     req.session.user_id = user.user_id;
     req.session.role = user.role;
 
-    
+    if(user.role === "walker") {
+        
+    }
 
   } catch (error) {
     console.error('SQL Error:', error);
