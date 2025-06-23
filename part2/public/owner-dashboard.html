@@ -86,7 +86,7 @@
 
         async function logout() {
           try {
-            const res = await fetch('/api/users/logout');
+            const res = await fetch('/api/users/logout', {method:'POST'});
             // window.location.href = '/';
           } catch (err) {
             error.value = 'Failed to logout';
