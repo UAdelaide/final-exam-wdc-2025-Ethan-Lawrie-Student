@@ -1,9 +1,12 @@
 const express = require('express');
 const path = require('path');
 require('dotenv').config();
+const session = require('express-session');
 
 const app = express();
 
+
+app.use(session)
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
