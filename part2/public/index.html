@@ -30,6 +30,9 @@
       </div>
     </div>
 
+    <div v-if="message" class="alert alert-info">{{ loginMsg }}</div>
+    <div v-if="error" class="alert alert-danger">{{ error }}</div>
+
 
 
 
