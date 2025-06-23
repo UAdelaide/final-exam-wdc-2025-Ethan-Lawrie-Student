@@ -8,7 +8,7 @@ router.post('/', async (req, res) => {
 
   try {
     await db.query(`
-      SELECT 
+      SELECT user_id, role
     `);
   } catch (error) {
     console.error('SQL Error:', error);
