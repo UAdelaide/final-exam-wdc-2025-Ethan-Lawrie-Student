@@ -11,7 +11,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        max
+        maxAge: 60000
     }
 }))
 // Middleware
