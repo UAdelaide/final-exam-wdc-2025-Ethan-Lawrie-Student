@@ -7,7 +7,7 @@ const { createApp, ref } = Vue
 
       function getDog(){
         fetch("https://dog.ceo/api/breeds/image/random").then((data) => {
-            if(data?.success)
+            if(!data.ok)
         })
       }
       return {
