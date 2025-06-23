@@ -38,7 +38,7 @@
   </div>
 
   <script>
-    const { createApp } = Vue;
+    const { createApp, ref } = Vue;
     createApp({
       setup(){
         const form = ref({
@@ -47,8 +47,6 @@
           duration_minutes: '',
           location: ''
         });
-      },
-      data() {
         return {
           message: 'Welcome to the Dog Walking Service!'
         };
