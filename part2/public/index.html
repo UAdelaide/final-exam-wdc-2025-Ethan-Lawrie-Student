@@ -56,11 +56,16 @@
         let message = ref('Welcome to the Dog Walking Service!');
 
 
-        function submitLoginRequest() {
+        async function submitLoginRequest() {
 
           console.log("WORKING");
 
-          
+          try {
+            const res = await fetch('/api/user');
+            walks.value = await res.json();
+          } catch (err) {
+            error.value = 'Failed to load walk requests';
+          }
 
 
         }
