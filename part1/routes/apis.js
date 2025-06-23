@@ -35,7 +35,7 @@ router.get('/walkers/summary', async function(req, res) {
     req.db.execute(`
       SELECT Users.username AS 'walker_username', COUNT(*) AS 'total_ratings', AVG(WalkRatings.rating) AS average_rating, SUM(CASE WHEN WalkRequests.status = 'completed' THEN 1 ELSE 0) FROM WalkRequests INNER JOIN WalkRatings ON WalkRequests.request_id = WalkRatings.request_id INNER JOIN Users ON WalkRatings.walker_id = Users.user_id GROUP BY User.user_id
     `).then((result) => {
-      res.json(result);
+      res.json(result[0]);
     })
   } catch (err) {
     console.error('Error querying', err);
