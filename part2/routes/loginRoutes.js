@@ -8,8 +8,9 @@ router.post('/', async (req, res) => {
 
   try {
     const [rows] = await db.query(`
-      SELECT user_id, role FROM Users WHERE username = ?
-    `);
+      SELECT user_id, role FROM Users WHERE username = ? AND password_hash = ?
+    `, [username, password]);
+    
     if(!rows) {
         res.status(404).json({ error: 'No user' });
     }
