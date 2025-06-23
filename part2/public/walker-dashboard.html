@@ -61,7 +61,7 @@
             try {
               const res = await fetch('/api/users/me', {credentials:'same-origin'});
               if (!res.ok) throw new Error('Failed to get login status');
-              const data = res.json();
+              const data = await res.json();
               return data.user_id;
             } catch (err) {
               error.value = err.message;
