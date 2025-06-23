@@ -3,6 +3,7 @@ const { createApp, ref } = Vue
   createApp({
     setup() {
       const message = ref('Hello vue!')
+      let 
 
 
       function getDog(){
@@ -13,7 +14,9 @@ const { createApp, ref } = Vue
             }
             return data.json();
         }).then((data) => {
-            if(data.success)
+            if(data.status === "success") {
+
+            }
         })
       }
       return {
