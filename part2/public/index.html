@@ -77,8 +77,12 @@
               password: ''
             };
 
-            if(user.)
-            window.location.href = '/owner-dashboard.html';
+            if(result.user.role = 'walker') {
+
+            } else {
+              window.location.href = '/owner-dashboard.html';
+            }
+
           } catch (err) {
             error.value = err.message;
             message.value = '';
