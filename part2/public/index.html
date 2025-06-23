@@ -15,13 +15,10 @@
 
     <!-- reusing the form styling from the page -->
     <div class="card mb-4">
-      <div class="card-header bg-primary text-white">
-        Create New Walk Request
-      </div>
       <div class="card-body">
-        <form @submit.prevent="submitWalkRequest">
+        <form @submit.prevent="submitLoginRequest">
           <div class="mb-3">
-            <label class="form-label">Dog ID</label>
+            <label class="form-label">username</label>
             <input v-model="form.dog_id" type="number" class="form-control" required>
           </div>
           <div class="mb-3">
