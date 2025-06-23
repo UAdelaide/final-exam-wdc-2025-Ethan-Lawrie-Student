@@ -114,7 +114,7 @@
                 return {...dog, dog_url:img.message};
               })
             );
-            dogInfo = dataAndImages;
+            dogInfo.value = dataAndImages;
 
           } catch (err) {
             error.value = 'Failed to load walk requests';
