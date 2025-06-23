@@ -92,7 +92,7 @@
 
         let loginMsg = "";
         let error = "";
-        let dog
+        let dogInfo = ref([]);
 
         let message = ref('Welcome to the Dog Walking Service!');
 
@@ -100,7 +100,7 @@
 
           try {
             const res = await fetch('/api/users/fetchDogInfo');
-            walks.value = await res.json();
+            dogInfo.value = await res.json();
           } catch (err) {
             error.value = 'Failed to load walk requests';
           }
