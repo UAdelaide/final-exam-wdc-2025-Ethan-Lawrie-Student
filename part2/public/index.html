@@ -105,7 +105,9 @@
 
 
             // run all of them at the same time and get the images for each
-            dataAndImages = 
+            dataAndImages = await Promise.all(
+              data.
+            )
 
           } catch (err) {
             error.value = 'Failed to load walk requests';
