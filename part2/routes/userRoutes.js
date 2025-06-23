@@ -27,7 +27,7 @@ router.get('/fetchDogInfo', async (req, res) => {
   try {
     const [rows] = await db.query('SELECT * FROM Dogs');
     rows.map((row) => {
-      
+      return {...row, await fetch('')}
     })
     res.json(rows);
   } catch (error) {
