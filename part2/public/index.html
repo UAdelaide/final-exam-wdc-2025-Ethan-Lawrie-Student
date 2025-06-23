@@ -76,12 +76,12 @@
             console.log("User type ", result.user.role);
 
             // redirect to the right page
-            if(result.user.role = "walker") {
-              console.log("WALKER");
-              // window.location.href = '/walker-dashboard.html';
+            if(result.user.role === "walker") {
+              // console.log("WALKER");
+              window.location.href = '/walker-dashboard.html';
 
-            } else if (result.user.role = "owner") {
-              console.log("OWNER");
+            } else if (result.user.role === "owner") {
+              // console.log("OWNER");
               window.location.href = '/owner-dashboard.html';
 
             }
