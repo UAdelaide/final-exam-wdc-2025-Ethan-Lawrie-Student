@@ -22,14 +22,14 @@ const { createApp, ref } = Vue
       }
 
       function showDog() {
-        displayImage = "block";
+        imageDisplay = "block";
       }
 
 
       return {
         message,
         dogURL,
-        displayImage,
+        imageDisplay,
         getDog,
         showDog
 
