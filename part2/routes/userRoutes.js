@@ -26,7 +26,9 @@ router.get('/getAllDogs', async (req, res) => {
 router.get('/fetchDogInfo', async (req, res) => {
   try {
     const [rows] = await db.query('SELECT * FROM Dogs');
-    rows.forEach((row))
+    rows.map((row) => {
+      
+    })
     res.json(rows);
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch dogs' });
