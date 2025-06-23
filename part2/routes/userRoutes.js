@@ -28,7 +28,7 @@ router.get('/fetchDogInfo', async (req, res) => {
     const [rows] = await db.query('SELECT * FROM Dogs');
     rows.forEach(async function(row) {
       dogURL = await fetch("https://dog.ceo/api/breeds/image/random");
-      
+      row[]
     });
     res.json(rows);
   } catch (error) {
