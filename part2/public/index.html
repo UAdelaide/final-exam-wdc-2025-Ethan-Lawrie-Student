@@ -79,7 +79,7 @@
             if(result.user.role = "walker") {
               window.location.href = '/walker-dashboard.html';
 
-            } else {
+            } else if (result.user.role = "") {
               window.location.href = '/owner-dashboard.html';
 
             }
