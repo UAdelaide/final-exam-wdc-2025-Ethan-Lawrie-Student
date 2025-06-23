@@ -10,7 +10,7 @@
 <body class="bg-light">
 
   <div id="app" class="container py-5">
-    <h1 class="mb-4 text-primary">{{ message.value }}</h1>
+    <h1 class="mb-4 text-primary">{{ message }}</h1>
     <p class="lead">Connect with trusted walkers for your beloved dog!</p>
 
     <!-- reusing the form styling from the page -->
@@ -48,7 +48,7 @@
           location: ''
         });
 
-        message: ref('Welcome to the Dog Walking Service!');
+        let message = ref('Welcome to the Dog Walking Service!');
 
         return {
           message,
