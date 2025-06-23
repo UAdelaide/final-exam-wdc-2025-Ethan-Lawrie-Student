@@ -50,6 +50,9 @@
         });
 
 
+        let loginMsg = "";
+        let error = "";
+
         let message = ref('Welcome to the Dog Walking Service!');
 
 
@@ -61,6 +64,8 @@
         return {
           message,
           form,
+          loginMsg,
+          error,
           submitLoginRequest
         };
       }
