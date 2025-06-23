@@ -83,9 +83,14 @@
         const error = ref('');
 
         function loadDogs() {
+          try {
+            const res = await fetch('/api/users/getAllDogs');
+            walks.value = await res.json();
+          } catch (err) {
+            error.value = 'Failed to load walk requests';
+          }
 
 
-          getAllDogs
         }
 
         async function logout() {
