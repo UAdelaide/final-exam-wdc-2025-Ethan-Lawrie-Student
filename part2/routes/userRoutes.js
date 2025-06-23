@@ -27,9 +27,7 @@ router.get('/fetchDogInfo', async (req, res) => {
   try {
     const [rows] = await db.query('SELECT * FROM Dogs');
     rows.forEach(row => {
-      map((row) => {
-        return {...row, await fetch('https://dog.ceo/api/breeds/image/random')}
-      })
+      dogURL = await fetch("https://dog.ceo/api/breeds/image/random");
     });
     res.json(rows);
   } catch (error) {
