@@ -61,7 +61,7 @@ router.post('/login', async (req, res) => {
 router.post('/logout', async (req, res) => {
 
   req.session.destroy((error) => {
-    if(err) {
+    if(error) {
       return res.status(500).json({error:"logout error"});
     }
     res.clearCookie('connect.sid');
