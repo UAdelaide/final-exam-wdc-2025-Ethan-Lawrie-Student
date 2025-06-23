@@ -8,6 +8,7 @@ body {
 
 button {
   background-color: red;
+  color: rgb(205, 42, 42);
   border:none;
 }
 
