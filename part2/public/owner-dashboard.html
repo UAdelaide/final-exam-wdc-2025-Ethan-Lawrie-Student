@@ -145,6 +145,7 @@
 
         onMounted(() => {
           loadWalks();
+          loadDogs();
         });
 
         return {
@@ -153,7 +154,8 @@
           message,
           error,
           submitWalkRequest,
-          logout
+          logout,
+          dogOptions
         };
       }
     }).mount('#app');
