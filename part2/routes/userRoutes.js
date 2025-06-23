@@ -60,7 +60,14 @@ router.post('/login', async (req, res) => {
 
 router.post('/logout', async (req, res) => {
 
-  req.session.destroy();
+  req.session.destroy((error) => {
+    if(err) {
+      return status.
+    }
+    res.clearCookie('connect.sid', {
+      path: '/'
+    });
+  });
 
 
 });
