@@ -21,7 +21,9 @@ const { createApp, ref } = Vue
         })
       }
 
-      function 
+      function showDog() {
+        displayImage = true;
+      }
 
 
       return {
@@ -29,6 +31,7 @@ const { createApp, ref } = Vue
         dogURL,
         displayImage,
         getDog,
+        showDog
 
 
       }
