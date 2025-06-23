@@ -23,6 +23,18 @@ router.get('/getAllDogs', async (req, res) => {
 });
 
 
+router.get('/fetchDogInfo', async (req, res) => {
+  try {
+    const [rows] = await db.query('SELECT Dogs.dog_id, Dogs.name FROM Dogs INNER JOIN Users ON Dogs.owner_id = Users.user_id WHERE Dogs.owner_id = ?', [req.session.user_id]);
+    res.json(rows);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch dogs' });
+  }
+});
+
+
+
+
 // POST a new user (simple signup)
 router.post('/register', async (req, res) => {
   const { username, email, password, role } = req.body;
