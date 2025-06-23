@@ -158,6 +158,7 @@ let db;
         INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) (SELECT dog_id, '2025-06-11 08:35:01', 35, 'Rundle Mall Start', 'open' FROM Dogs WHERE name = 'Fred');
 
         INSERT INTO WalkRatings (request_id, walker_id, owner_id, rating, comments, rated_at) VALUES (4, 2, 4, 5, 'was a good walk', '2025-06-23 04:06:25');
+        INSERT INTO WalkRatings (request_id, walker_id, owner_id, rating, comments, rated_at) VALUES (4, 2, 4, 3, 'was a good walk', '2025-06-23 04:06:25');
         `);
 
   } catch (err) {
