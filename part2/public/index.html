@@ -47,8 +47,12 @@
           duration_minutes: '',
           location: ''
         });
+
+        message: ref('Welcome to the Dog Walking Service!');
+
         return {
-          message: 'Welcome to the Dog Walking Service!'
+          message,
+          form
         };
       }
     }).mount('#app');
