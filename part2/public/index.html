@@ -145,7 +145,10 @@
           } catch (err) {
             error.value = err.message;
             loginMsg.value = '';
-            
+            form = {
+              username: '',
+              password: ''
+            };
           }
 
 
