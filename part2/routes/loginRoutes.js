@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
         res.status(404).json({ error: 'No user' });
     }
     const user = rows[0];
-    req.session = 
+    req.session.user_id = user.user_id;
 
   } catch (error) {
     console.error('SQL Error:', error);
