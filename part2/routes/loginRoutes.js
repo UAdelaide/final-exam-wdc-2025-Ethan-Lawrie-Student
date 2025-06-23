@@ -4,6 +4,8 @@ const db = require('../models/db');
 
 
 router.post('/', async (req, res) => {
+    const {user}
+
   try {
     const [rows] = await db.query('SELECT user_id, username, email, role FROM Users');
     res.json(rows);
