@@ -57,7 +57,7 @@
         </th>
       </tr>
 
-      <tr v-for="dog in dogs">
+      <tr v-for="dog in dogInfo">
         <td>
           {{dog.dog_id}}
         </td>
@@ -81,7 +81,7 @@
   </div>
 
   <script>
-    const { createApp, ref } = Vue;
+    const { createApp, ref, onMounted } = Vue;
     createApp({
       setup(){
         const form = ref({
