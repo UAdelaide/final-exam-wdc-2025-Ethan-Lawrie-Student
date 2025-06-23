@@ -70,7 +70,7 @@
 
             if (!res.ok) throw new Error(result.error || 'Error submitting login request');
 
-            message.value = result.message;
+            loginMsg.value = result.message;
             error.value = '';
             form.value = {
               username: '',
@@ -87,7 +87,7 @@
 
           } catch (err) {
             error.value = err.message;
-            message.value = '';
+            loginMsg.value = '';
           }
 
 
