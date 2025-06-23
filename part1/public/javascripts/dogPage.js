@@ -6,7 +6,9 @@ const { createApp, ref } = Vue
 
 
       function getDog(){
-        fetch("")
+        fetch("https://dog.ceo/api/breeds/image/random").then((data) => {
+            
+        })
       }
       return {
         message
